@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+    <!-- ==================== Ammo Categories ==================== -->
+
+    <CombatExtended.AmmoCategoryDef>
+        <defName>GaussBatteryHomemade</defName>
+        <label>Homemade Gauss Battery</label>
+        <labelShort>Homemade</labelShort>
+        <description>Battery used by advanced Gauss rifle designs.</description>
+    </CombatExtended.AmmoCategoryDef>
+
+    <CombatExtended.AmmoCategoryDef>
+        <defName>GaussBatteryIndustrial</defName>
+        <label>Industrial Gauss Battery</label>
+        <labelShort>Industrial</labelShort>
+        <description>Battery used by advanced Gauss rifle designs.</description>
+    </CombatExtended.AmmoCategoryDef>
+
+    <CombatExtended.AmmoCategoryDef>
+        <defName>GaussBatteryCharged</defName>
+        <label>Charged Gauss Battery</label>
+        <labelShort>Charged</labelShort>
+        <description>Battery used by advanced Gauss rifle designs.</description>
+    </CombatExtended.AmmoCategoryDef>
+
+    <!-- ==================== homemade battery, industrial battery, charged battery, batteries, GaussBattery ========================== -->
+
+    <ThingCategoryDef>
+        <defName>AmmoGaussBattery</defName>
+        <label>Gauss Battery</label>
+        <parent>AmmoAdvanced</parent>
+        <iconPath>Things/Ammo/Item62/Charged/Charged_a</iconPath>
+    </ThingCategoryDef>
+
+    <!-- ==================== AmmoSet ========================== -->
+
+    <CombatExtended.AmmoSetDef>
+        <defName>AmmoSet_GaussBattery</defName>
+        <label>Gauss Battery</label>
+        <ammoTypes>
+            <Ammo_GaussBattery_Homemade>Bullet_GaussBattery_Homemade</Ammo_GaussBattery_Homemade>
+            <Ammo_GaussBattery_Industrial>Bullet_GaussBattery_Industrial</Ammo_GaussBattery_Industrial>
+            <Ammo_GaussBattery_Charged>Bullet_GaussBattery_Charged</Ammo_GaussBattery_Charged>
+        </ammoTypes>
+    </CombatExtended.AmmoSetDef>
+
+    <!-- ==================== Ammo ========================== -->
+
+    <ThingDef Class="CombatExtended.AmmoDef" Name="GaussBatteryBase" ParentName="SpacerSmallAmmoBase" Abstract="True">
+        <description>Battery used by advanced Gauss rifle designs.</description>
+        <statBases>
+            <Mass>0.018</Mass>
+            <Bulk>0.01</Bulk>
+        </statBases>
+        <tradeTags>
+            <li>CE_AutoEnableTrade</li>
+            <li>CE_AutoEnableCrafting_FabricationBench</li>
+        </tradeTags>
+        <thingCategories>
+            <li>AmmoGaussBattery</li>
+        </thingCategories>
+        <stackLimit>3000</stackLimit>
+    </ThingDef>
+
+    <ThingDef Class="CombatExtended.AmmoDef" ParentName="GaussBatteryBase">
+        <defName>Ammo_GaussBattery_Homemade</defName>
+        <label>Gauss Battery (Homemade)</label>
+        <graphicData>
+            <texPath>Things/Ammo/Item62/Homemade</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>1.55</MarketValue>
+        </statBases>
+        <ammoClass>GaussBatteryHomemade</ammoClass>
+    </ThingDef>
+
+    <ThingDef Class="CombatExtended.AmmoDef" ParentName="GaussBatteryBase">
+        <defName>Ammo_GaussBattery_Industrial</defName>
+        <label>Gauss Battery (Industrial)</label>
+        <graphicData>
+            <texPath>Things/Ammo/Item62/Industrial</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>1.55</MarketValue>
+        </statBases>
+        <ammoClass>GaussBatteryIndustrial</ammoClass>
+    </ThingDef>
+
+    <ThingDef Class="CombatExtended.AmmoDef" ParentName="GaussBatteryBase">
+        <defName>Ammo_GaussBattery_Charged</defName>
+        <label>Gauss Battery (Charged)</label>
+        <graphicData>
+            <texPath>Things/Ammo/Item62/Charged</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>1.55</MarketValue>
+        </statBases>
+        <ammoClass>GaussBatteryCharged</ammoClass>
+    </ThingDef>
+
+    <!-- ================== Projectiles ================== -->
+
+    <ThingDef Class="CombatExtended.AmmoDef" Name="BaseGaussBatteryBullet" ParentName="BaseBullet" Abstract="true">
+        <graphicData>
+            <texPath>Things/Projectile/ChargeLanceShot</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile Class="CombatExtended.ProjectilePropertiesCE">
+            <damageDef>Bullet</damageDef>
+            <speed>100</speed>
+            <dropsCasings>false</dropsCasings>
+        </projectile>
+        <thingClass>CombatExtended.BulletCE</thingClass>
+    </ThingDef>
+
+    <!-- Gauss Battery (Homemade) -->
+    <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGaussBatteryBullet">
+        <defName>Bullet_GaussBattery_Homemade</defName>
+        <label>Gauss Battery (Homemade)</label>
+        <projectile Class="CombatExtended.ProjectilePropertiesCE">
+            <!--<damageAmountBase>19</damageAmountBase>
+            <secondaryDamage>
+                <li>
+                    <def>Bomb_Secondary</def>
+                    <amount>6</amount>
+                </li>
+            </secondaryDamage>
+            <armorPenetrationSharp>14</armorPenetrationSharp>
+            <armorPenetrationBlunt>20.0</armorPenetrationBlunt> -->
+            <damageAmountBase>10</damageAmountBase>
+            <secondaryDamage>
+                <li>
+                    <def>EMP</def>
+                    <amount>3</amount>
+                </li>
+            </secondaryDamage>
+            <armorPenetrationSharp>15</armorPenetrationSharp>
+            <armorPenetrationBlunt>20.0</armorPenetrationBlunt>
+            <empShieldBreakChance>0.1</empShieldBreakChance>
+        </projectile>
+    </ThingDef>
+
+    <!-- Gauss Battery (Industrial) -->
+    <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGaussBatteryBullet">
+        <defName>Bullet_GaussBattery_Industrial</defName>
+        <label>Gauss Battery (Industrial)</label>
+        <projectile Class="CombatExtended.ProjectilePropertiesCE">
+            <!--<damageAmountBase>15</damageAmountBase>
+            <secondaryDamage>
+                <li>
+                    <def>Bomb_Secondary</def>
+                    <amount>2</amount>
+                </li>
+            </secondaryDamage>
+            <armorPenetrationSharp>28</armorPenetrationSharp>
+            <armorPenetrationBlunt>20.0</armorPenetrationBlunt> -->
+            <damageAmountBase>15</damageAmountBase>
+            <secondaryDamage>
+                <li>
+                    <def>EMP</def>
+                    <amount>7</amount>
+                </li>
+            </secondaryDamage>
+            <armorPenetrationSharp>21</armorPenetrationSharp>
+            <armorPenetrationBlunt>20.0</armorPenetrationBlunt>
+            <empShieldBreakChance>0.2</empShieldBreakChance>
+        </projectile>
+    </ThingDef>
+
+    <!-- Gauss Battery (Charged) -->
+    <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseGaussBatteryBullet">
+        <defName>Bullet_GaussBattery_Charged</defName>
+        <label>Gauss Battery (Charged)</label>
+        <projectile Class="CombatExtended.ProjectilePropertiesCE">
+            <!--<damageAmountBase>15</damageAmountBase>
+            <secondaryDamage>
+                <li>
+                    <def>EMP</def>
+                    <amount>9</amount>
+                </li>
+            </secondaryDamage>
+            <armorPenetrationSharp>21</armorPenetrationSharp>
+            <armorPenetrationBlunt>20.0</armorPenetrationBlunt>
+            <empShieldBreakChance>0.2</empShieldBreakChance> -->
+            <damageAmountBase>20</damageAmountBase>
+            <secondaryDamage>
+                <li>
+                    <def>EMP</def>
+                    <amount>10</amount>
+                </li>
+            </secondaryDamage>
+            <armorPenetrationSharp>30</armorPenetrationSharp>
+            <armorPenetrationBlunt>20.0</armorPenetrationBlunt>
+            <empShieldBreakChance>0.3</empShieldBreakChance>
+        </projectile>
+    </ThingDef>
+
+    <!-- ==================== Recipes ========================== -->
+
+    <RecipeDef ParentName="AmmoRecipeBase">
+        <defName>MakeAmmo_GaussBattery_Homemade</defName>
+        <label>make Gauss batteries cartridge (Homemade) x500</label>
+        <description>Craft 500 Gauss batteries (Homemade).</description>
+        <jobString>Making Gauss batteries (Homemade).</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>7</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>6</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Plasteel</li>
+                <li>Steel</li>
+                <li>ComponentIndustrial</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Ammo_GaussBattery_Homemade>500</Ammo_GaussBattery_Homemade>
+        </products>
+        <workAmount>13000</workAmount>
+    </RecipeDef>
+
+    <RecipeDef ParentName="AdvancedAmmoRecipeBase">
+        <defName>MakeAmmo_GaussBattery_Industrial</defName>
+        <label>make Gauss batteries (Industrial) x500</label>
+        <description>Craft 500 Gauss batteries (Industrial).</description>
+        <jobString>Making Gauss batteries (Industrial).</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>8</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>8</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Plasteel</li>
+                <li>Steel</li>
+                <li>ComponentIndustrial</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Ammo_GaussBattery_Industrial>500</Ammo_GaussBattery_Industrial>
+        </products>
+        <workAmount>16000</workAmount>
+    </RecipeDef>
+
+    <RecipeDef ParentName="ChargeAmmoRecipeBase">
+        <defName>MakeAmmo_GaussBattery_Charged</defName>
+        <label>make Gauss batteries (Charged) x500</label>
+        <description>Craft 500 Gauss batteries (Charged).</description>
+        <jobString>Making Gauss batteries (Charged).</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>18</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>18</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Plasteel</li>
+                <li>Steel</li>
+                <li>ComponentIndustrial</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <Ammo_GaussBattery_Charged>500</Ammo_GaussBattery_Charged>
+        </products>
+        <workAmount>19000</workAmount>
+    </RecipeDef>
+
+</Defs>

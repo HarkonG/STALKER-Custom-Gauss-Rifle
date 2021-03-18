@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Weapons Expanded - Coilguns</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="GN_STALKER_Gauss"]/verbs</xpath>
+                    <value>
+                        <verbs>
+                            <li>
+                                <verbClass>Verb_Shoot</verbClass>
+                                <hasStandardCommand>true</hasStandardCommand>
+                                <defaultProjectile>VWE_Bullet_GaussRifle</defaultProjectile>
+                                <warmupTime>1.50</warmupTime>
+                                <range>35</range>
+                                <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+                                <burstShotCount>3</burstShotCount>
+                                <soundCast>GN_Shot_STALKER_Gauss</soundCast>
+                                <soundCastTail>GunTail_Medium</soundCastTail>
+                                <muzzleFlashScale>9</muzzleFlashScale>
+                                <targetParams>
+                                    <canTargetLocations>true</canTargetLocations>
+                                    <canTargetPawns>true</canTargetPawns>
+                                    <canTargetBuildings>true</canTargetBuildings>
+                                </targetParams>
+                            </li>
+                        </verbs>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="GN_STALKER_Gauss"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite>VWE_MassDrivers</researchPrerequisite>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="GN_STALKER_Gauss_Sniper"]/verbs</xpath>
+                    <value>
+                        <verbs>
+                            <li>
+                                <verbClass>Verb_Shoot</verbClass>
+                                <hasStandardCommand>true</hasStandardCommand>
+                                <defaultProjectile>VWE_Bullet_GaussLance</defaultProjectile>
+                                <warmupTime>4.50</warmupTime>
+                                <range>48</range>
+                                <soundCast>GN_Shot_STALKER_Gauss</soundCast>
+                                <soundCastTail>GunTail_Medium</soundCastTail>
+                                <muzzleFlashScale>14</muzzleFlashScale>
+                                <targetParams>
+                                    <canTargetLocations>true</canTargetLocations>
+                                    <canTargetPawns>true</canTargetPawns>
+                                    <canTargetBuildings>true</canTargetBuildings>
+                                </targetParams>
+                            </li>
+                        </verbs>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="GN_STALKER_Gauss_Sniper"]/recipeMaker/researchPrerequisite</xpath>
+                    <value>
+                        <researchPrerequisite>VWE_MassDrivers</researchPrerequisite>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>
