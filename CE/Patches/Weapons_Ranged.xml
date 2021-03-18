@@ -74,7 +74,7 @@
                         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                         <hasStandardCommand>True</hasStandardCommand>
                         <defaultProjectile>Bullet_GaussBattery_Homemade</defaultProjectile>
-                        <warmupTime>0.3</warmupTime>
+                        <warmupTime>1.0</warmupTime>
                         <range>58</range>                      
                         <soundCast>GN_Shot_STALKER_Gauss</soundCast>
                         <soundCastTail>GunTail_Medium</soundCastTail>
@@ -118,7 +118,7 @@
                         <verbClass>CombatExtended.Verb_ShootCE</verbClass>
                         <hasStandardCommand>True</hasStandardCommand>
                         <defaultProjectile>Bullet_GaussBattery_Homemade</defaultProjectile>
-                        <warmupTime>1.6</warmupTime>
+                        <warmupTime>2.0</warmupTime>
                         <range>78</range>
                         <soundCast>GN_Shot_STALKER_Gauss</soundCast>
                         <soundCastTail>GunTail_Medium</soundCastTail>
