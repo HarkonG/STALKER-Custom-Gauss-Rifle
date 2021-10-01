@@ -12,7 +12,7 @@
                 <!--===== TOOLS FOR THE TOOL GOD =====-->
                 <li Class="PatchOperationReplace">
                     <xpath>
-				    /Defs/ThingDef[defName = "GN_STALKER_Gauss" or defName = "GN_STALKER_Gauss_Sniper"]/tools
+				    /Defs/ThingDef[defName = "HRK_STALKER_Gauss" or defName = "HRK_STALKER_Gauss_Sniper"]/tools
                     </xpath>
                     <value>
                         <tools>
@@ -53,7 +53,7 @@
 
                 <!--===== Gauss Rifle "Item 62" Mk.I =====-->
                 <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
-                    <defName>GN_STALKER_Gauss</defName>
+                    <defName>HRK_STALKER_Gauss</defName>
                     <statBases>
                         <Mass>3.0</Mass>
                         <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
@@ -76,7 +76,7 @@
                         <defaultProjectile>Bullet_GaussBattery_Homemade</defaultProjectile>
                         <warmupTime>1.0</warmupTime>
                         <range>58</range>                      
-                        <soundCast>GN_Shot_STALKER_Gauss</soundCast>
+                        <soundCast>HRK_Shot_STALKER_Gauss</soundCast>
                         <soundCastTail>GunTail_Medium</soundCastTail>
                         <muzzleFlashScale>9</muzzleFlashScale>
                     </Properties>
@@ -97,7 +97,7 @@
 
                 <!--===== Gauss Rifle "Item 62" Mk.II =====-->
                 <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
-                    <defName>GN_STALKER_Gauss_Sniper</defName>
+                    <defName>HRK_STALKER_Gauss_Sniper</defName>
                     <statBases>
                         <WorkToMake>51500</WorkToMake>
                         <Mass>6.0</Mass>
@@ -120,7 +120,7 @@
                         <defaultProjectile>Bullet_GaussBattery_Homemade</defaultProjectile>
                         <warmupTime>2.0</warmupTime>
                         <range>78</range>
-                        <soundCast>GN_Shot_STALKER_Gauss</soundCast>
+                        <soundCast>HRK_Shot_STALKER_Gauss</soundCast>
                         <soundCastTail>GunTail_Medium</soundCastTail>
                         <muzzleFlashScale>9</muzzleFlashScale>
                     </Properties>

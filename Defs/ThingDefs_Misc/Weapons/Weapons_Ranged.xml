@@ -4,7 +4,7 @@
 
   <!--===== Gauss Rifle "Item 62" =====-->
   <ThingDef ParentName="BaseBullet">
-    <defName>GN_Bullet_STALKER_Gauss</defName>
+    <defName>HRK_Bullet_STALKER_Gauss</defName>
     <label>Item 62 blast</label>
     <graphicData>
       <texPath>Things/Projectile/ChargeLanceShot</texPath>
@@ -19,22 +19,23 @@
     </projectile>
   </ThingDef>
 
-  <ThingDef ParentName="GNGR_BaseHumanMakeableGun">
-    <defName>GN_STALKER_Gauss</defName>
+  <ThingDef ParentName="HRK_GunNut_BaseHumanMakeableGun">
+    <defName>HRK_STALKER_Gauss</defName>
     <label>Item 62 Mk.I</label>
     <description>The Gauss Rifle (Gauss Gun in Shadow of Chernobyl), officially known as Item 62 or Project 62, is a weapon created by researchers and weapon smiths within the Zone. It is featured in S.T.A.L.K.E.R.: Shadow of Chernobyl and S.T.A.L.K.E.R.: Call of Pripyat. A special prototype variant of the weapon, the EM1 Rifle, only appears in S.T.A.L.K.E.R.: Clear Sky.</description>
+    <techLevel>Spacer</techLevel>
     <graphicData>
-      <texPath>Things/Weapons/GN_STALKER_Gauss</texPath>
+      <texPath>Things/Weapons/HRK_STALKER_Gauss</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.0</drawSize>
     </graphicData>
     <equippedAngleOffset>45</equippedAngleOffset>
-    <soundInteract>GN_Interact_STALKER_Gauss</soundInteract>
+    <soundInteract>HRK_Interact_STALKER_Gauss</soundInteract>
     <recipeMaker>
       <recipeUsers>
         <li>FabricationBench</li>
       </recipeUsers>
-      <researchPrerequisite>ChargedShot</researchPrerequisite>
+      <researchPrerequisite>HRK_Research_GunNut_STALKER_Gauss</researchPrerequisite>
       <skillRequirements>
         <Crafting>15</Crafting>
       </skillRequirements>
@@ -58,12 +59,12 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>GN_Bullet_STALKER_Gauss</defaultProjectile>
+        <defaultProjectile>HRK_Bullet_STALKER_Gauss</defaultProjectile>
         <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
         <burstShotCount>2</burstShotCount>
         <warmupTime>2.0</warmupTime>
         <range>31</range>
-        <soundCast>GN_Shot_STALKER_Gauss</soundCast>
+        <soundCast>HRK_Shot_STALKER_Gauss</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
@@ -87,11 +88,7 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
-    <thingSetMakerTags Inherit="False">
-      <li>RewardStandardLowFreq</li>
-      <li>RewardStandardQualitySuper</li>
-    </thingSetMakerTags>
-    <weaponTags Inherit="False">
+    <weaponTags>
       <li>SpacerGun</li>
       <!-- Unused, but available to modders -->
       <li>Coilgun</li>
@@ -100,7 +97,7 @@
 
   <!--===== Gauss Rifle "Item 62" Mk.II =====-->
   <ThingDef ParentName="BaseBullet">
-    <defName>GN_Bullet_STALKER_Gauss_Sniper</defName>
+    <defName>HRK_Bullet_STALKER_Gauss_Sniper</defName>
     <label>Item 62 blast</label>
     <graphicData>
       <texPath>Things/Projectile/ChargeLanceShot</texPath>
@@ -115,22 +112,23 @@
     </projectile>
   </ThingDef>
 
-  <ThingDef ParentName="GNGR_BaseHumanMakeableGun">
-    <defName>GN_STALKER_Gauss_Sniper</defName>
+  <ThingDef ParentName="HRK_GunNut_BaseHumanMakeableGun">
+    <defName>HRK_STALKER_Gauss_Sniper</defName>
     <label>Item 62 Mk.II</label>
     <description>The Gauss Rifle (Gauss Gun in Shadow of Chernobyl), officially known as Item 62 or Project 62, is a weapon created by researchers and weapon smiths within the Zone. It is featured in S.T.A.L.K.E.R.: Shadow of Chernobyl and S.T.A.L.K.E.R.: Call of Pripyat. A special prototype variant of the weapon, the EM1 Rifle, only appears in S.T.A.L.K.E.R.: Clear Sky.</description>
+    <techLevel>Spacer</techLevel>
     <graphicData>
-      <texPath>Things/Weapons/GN_STALKER_Gauss_Sniper</texPath>
+      <texPath>Things/Weapons/HRK_STALKER_Gauss_Sniper</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>1.0</drawSize>
     </graphicData>
     <equippedAngleOffset>45</equippedAngleOffset>
-    <soundInteract>GN_Interact_STALKER_Gauss</soundInteract>
+    <soundInteract>HRK_Interact_STALKER_Gauss</soundInteract>
     <recipeMaker>
       <recipeUsers>
         <li>FabricationBench</li>
       </recipeUsers>
-      <researchPrerequisite>ChargedShot</researchPrerequisite>
+      <researchPrerequisite>HRK_Research_GunNut_STALKER_Gauss</researchPrerequisite>
       <skillRequirements>
         <Crafting>15</Crafting>
       </skillRequirements>
@@ -154,10 +152,10 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>GN_Bullet_STALKER_Gauss_Sniper</defaultProjectile>
+        <defaultProjectile>HRK_Bullet_STALKER_Gauss_Sniper</defaultProjectile>
         <warmupTime>3.0</warmupTime>
         <range>45</range>
-        <soundCast>GN_Shot_STALKER_Gauss</soundCast>
+        <soundCast>HRK_Shot_STALKER_Gauss</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
@@ -181,11 +179,7 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
-    <thingSetMakerTags Inherit="False">
-      <li>RewardStandardLowFreq</li>
-      <li>RewardStandardQualitySuper</li>
-    </thingSetMakerTags>
-    <weaponTags Inherit="False">
+    <weaponTags>
       <li>SpacerGun</li>
       <!-- Unused, but available to modders -->
       <li>Coilgun</li>

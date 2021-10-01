@@ -123,19 +123,10 @@
         <defName>Bullet_GaussBattery_Homemade</defName>
         <label>Gauss Battery (Homemade)</label>
         <projectile Class="CombatExtended.ProjectilePropertiesCE">
-            <!--<damageAmountBase>19</damageAmountBase>
-            <secondaryDamage>
-                <li>
-                    <def>Bomb_Secondary</def>
-                    <amount>6</amount>
-                </li>
-            </secondaryDamage>
-            <armorPenetrationSharp>14</armorPenetrationSharp>
-            <armorPenetrationBlunt>20.0</armorPenetrationBlunt> -->
             <damageAmountBase>10</damageAmountBase>
             <secondaryDamage>
                 <li>
-                    <def>EMP</def>
+                    <def>Bomb_Secondary</def>
                     <amount>3</amount>
                 </li>
             </secondaryDamage>
@@ -150,20 +141,15 @@
         <defName>Bullet_GaussBattery_Industrial</defName>
         <label>Gauss Battery (Industrial)</label>
         <projectile Class="CombatExtended.ProjectilePropertiesCE">
-            <!--<damageAmountBase>15</damageAmountBase>
-            <secondaryDamage>
-                <li>
-                    <def>Bomb_Secondary</def>
-                    <amount>2</amount>
-                </li>
-            </secondaryDamage>
-            <armorPenetrationSharp>28</armorPenetrationSharp>
-            <armorPenetrationBlunt>20.0</armorPenetrationBlunt> -->
             <damageAmountBase>15</damageAmountBase>
             <secondaryDamage>
                 <li>
+                    <def>Bomb_Secondary</def>
+                    <amount>3</amount>
+                </li>
+                <li>
                     <def>EMP</def>
-                    <amount>7</amount>
+                    <amount>3</amount>
                 </li>
             </secondaryDamage>
             <armorPenetrationSharp>21</armorPenetrationSharp>
@@ -177,16 +163,6 @@
         <defName>Bullet_GaussBattery_Charged</defName>
         <label>Gauss Battery (Charged)</label>
         <projectile Class="CombatExtended.ProjectilePropertiesCE">
-            <!--<damageAmountBase>15</damageAmountBase>
-            <secondaryDamage>
-                <li>
-                    <def>EMP</def>
-                    <amount>9</amount>
-                </li>
-            </secondaryDamage>
-            <armorPenetrationSharp>21</armorPenetrationSharp>
-            <armorPenetrationBlunt>20.0</armorPenetrationBlunt>
-            <empShieldBreakChance>0.2</empShieldBreakChance> -->
             <damageAmountBase>20</damageAmountBase>
             <secondaryDamage>
                 <li>
@@ -202,7 +178,7 @@
 
     <!-- ==================== Recipes ========================== -->
 
-    <RecipeDef ParentName="AmmoRecipeBase">
+    <RecipeDef ParentName="ChargeAmmoRecipeBase">
         <defName>MakeAmmo_GaussBattery_Homemade</defName>
         <label>make Gauss batteries cartridge (Homemade) x500</label>
         <description>Craft 500 Gauss batteries (Homemade).</description>
@@ -244,9 +220,10 @@
             <Ammo_GaussBattery_Homemade>500</Ammo_GaussBattery_Homemade>
         </products>
         <workAmount>13000</workAmount>
+        <researchPrerequisite>HRK_Research_GunNut_STALKER_Gauss</researchPrerequisite>
     </RecipeDef>
 
-    <RecipeDef ParentName="AdvancedAmmoRecipeBase">
+    <RecipeDef ParentName="ChargeAmmoRecipeBase">
         <defName>MakeAmmo_GaussBattery_Industrial</defName>
         <label>make Gauss batteries (Industrial) x500</label>
         <description>Craft 500 Gauss batteries (Industrial).</description>
@@ -288,6 +265,7 @@
             <Ammo_GaussBattery_Industrial>500</Ammo_GaussBattery_Industrial>
         </products>
         <workAmount>16000</workAmount>
+        <researchPrerequisite>HRK_Research_GunNut_STALKER_Gauss</researchPrerequisite>
     </RecipeDef>
 
     <RecipeDef ParentName="ChargeAmmoRecipeBase">
@@ -332,6 +310,7 @@
             <Ammo_GaussBattery_Charged>500</Ammo_GaussBattery_Charged>
         </products>
         <workAmount>19000</workAmount>
+        <researchPrerequisite>HRK_Research_GunNut_STALKER_Gauss</researchPrerequisite>
     </RecipeDef>
 
 </Defs>

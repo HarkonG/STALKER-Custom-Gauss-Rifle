@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ResearchProjectDef>
+        <defName>HRK_Research_GunNut_STALKER_Gauss</defName>
+        <label>mass drivers</label>
+        <description>Assemble weapons which utilize electromagnets to catapult sabots up to hypervelocity.</description>
+        <baseCost>1500</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>Fabrication</li>
+        </prerequisites>
+        <hiddenPrerequisites>
+            <li>PrecisionRifling</li>
+        </hiddenPrerequisites>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
+        <researchViewX>6.00</researchViewX>
+        <researchViewY>6.20</researchViewY>
+        <tab>HRK_ResearchTab_GunNut</tab>
+    </ResearchProjectDef>
+</Defs>

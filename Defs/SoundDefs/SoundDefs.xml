@@ -3,7 +3,7 @@
 <Defs>
 
     <SoundDef>
-        <defName>GN_Interact_STALKER_Gauss</defName>
+        <defName>HRK_Interact_STALKER_Gauss</defName>
         <context>MapOnly</context>
         <eventNames />
         <maxSimultaneous>1</maxSimultaneous>
@@ -11,7 +11,7 @@
             <li>
                 <grains>
                     <li Class="AudioGrain_Folder">
-                        <clipFolderPath>Weapons/GN_Interact_STALKER_Gauss</clipFolderPath>
+                        <clipFolderPath>Weapons/HRK_Interact_STALKER_Gauss</clipFolderPath>
                     </li>
                 </grains>
                 <volumeRange>
@@ -28,7 +28,7 @@
     </SoundDef>
 
     <SoundDef>
-        <defName>GN_Shot_STALKER_Gauss</defName>
+        <defName>HRK_Shot_STALKER_Gauss</defName>
         <context>MapOnly</context>
         <eventNames />
         <maxSimultaneous>1</maxSimultaneous>
@@ -36,7 +36,7 @@
             <li>
                 <grains>
                     <li Class="AudioGrain_Folder">
-                        <clipFolderPath>Weapons/GN_Shot_STALKER_Gauss</clipFolderPath>
+                        <clipFolderPath>Weapons/HRK_Shot_STALKER_Gauss</clipFolderPath>
                     </li>
                 </grains>
                 <volumeRange>
