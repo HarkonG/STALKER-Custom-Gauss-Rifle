@@ -16,8 +16,8 @@
         <requiredResearchFacilities>
             <li>MultiAnalyzer</li>
         </requiredResearchFacilities>
-        <researchViewX>6.00</researchViewX>
-        <researchViewY>6.20</researchViewY>
+        <researchViewX>2.00</researchViewX>
+        <researchViewY>0.85</researchViewY>
         <tab>HRK_ResearchTab_GunNut</tab>
     </ResearchProjectDef>
 </Defs>

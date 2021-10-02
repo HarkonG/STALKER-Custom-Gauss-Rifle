@@ -32,7 +32,7 @@
     <equippedAngleOffset>45</equippedAngleOffset>
     <soundInteract>HRK_Interact_STALKER_Gauss</soundInteract>
     <recipeMaker>
-      <recipeUsers>
+      <recipeUsers Inherit="False">
         <li>FabricationBench</li>
       </recipeUsers>
       <researchPrerequisite>HRK_Research_GunNut_STALKER_Gauss</researchPrerequisite>
@@ -125,7 +125,7 @@
     <equippedAngleOffset>45</equippedAngleOffset>
     <soundInteract>HRK_Interact_STALKER_Gauss</soundInteract>
     <recipeMaker>
-      <recipeUsers>
+      <recipeUsers Inherit="False">
         <li>FabricationBench</li>
       </recipeUsers>
       <researchPrerequisite>HRK_Research_GunNut_STALKER_Gauss</researchPrerequisite>
