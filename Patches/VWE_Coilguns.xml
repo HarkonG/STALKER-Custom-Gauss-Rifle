@@ -9,25 +9,16 @@
             <operations>
 
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="HRK_Research_GunNut_STALKER_Gauss"]/prerequisites</xpath>
+                    <xpath>/Defs/ThingDef[defName="HRK_STALKER_Gauss"]/recipeMaker/researchPrerequisite</xpath>
                     <value>
-                        <prerequisites>
-                            <li>VWE_MassDrivers</li>
-                        </prerequisites>
+                        <researchPrerequisite>VWE_MassDrivers</researchPrerequisite>
                     </value>
                 </li>
 
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="HRK_Research_GunNut_STALKER_Gauss"]/label</xpath>
+                    <xpath>/Defs/ThingDef[defName="HRK_STALKER_Gauss_Sniper"]/recipeMaker/researchPrerequisite</xpath>
                     <value>
-                        <label>advanced coilguns</label>
-                    </value>
-                </li>
-
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ResearchProjectDef[defName="HRK_Research_GunNut_STALKER_Gauss"]/description</xpath>
-                    <value>
-                        <description>Assemble advanced prototypes which utilize electromagnets to catapult sabots up to hypervelocity.</description>
+                        <researchPrerequisite>VWE_MassDrivers</researchPrerequisite>
                     </value>
                 </li>
 

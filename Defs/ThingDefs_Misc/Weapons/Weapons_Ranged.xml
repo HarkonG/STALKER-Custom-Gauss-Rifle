@@ -19,7 +19,7 @@
     </projectile>
   </ThingDef>
 
-  <ThingDef ParentName="HRK_GunNut_BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>HRK_STALKER_Gauss</defName>
     <label>Item 62 Mk.I</label>
     <description>The Gauss Rifle (Gauss Gun in Shadow of Chernobyl), officially known as Item 62 or Project 62, is a weapon created by researchers and weapon smiths within the Zone. It is featured in S.T.A.L.K.E.R.: Shadow of Chernobyl and S.T.A.L.K.E.R.: Call of Pripyat. A special prototype variant of the weapon, the EM1 Rifle, only appears in S.T.A.L.K.E.R.: Clear Sky.</description>
@@ -35,7 +35,7 @@
       <recipeUsers Inherit="False">
         <li>FabricationBench</li>
       </recipeUsers>
-      <researchPrerequisite>HRK_Research_GunNut_STALKER_Gauss</researchPrerequisite>
+      <researchPrerequisite>ChargedShot</researchPrerequisite>
       <skillRequirements>
         <Crafting>15</Crafting>
       </skillRequirements>
@@ -112,7 +112,7 @@
     </projectile>
   </ThingDef>
 
-  <ThingDef ParentName="HRK_GunNut_BaseHumanMakeableGun">
+  <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>HRK_STALKER_Gauss_Sniper</defName>
     <label>Item 62 Mk.II</label>
     <description>The Gauss Rifle (Gauss Gun in Shadow of Chernobyl), officially known as Item 62 or Project 62, is a weapon created by researchers and weapon smiths within the Zone. It is featured in S.T.A.L.K.E.R.: Shadow of Chernobyl and S.T.A.L.K.E.R.: Call of Pripyat. A special prototype variant of the weapon, the EM1 Rifle, only appears in S.T.A.L.K.E.R.: Clear Sky.</description>
@@ -128,7 +128,7 @@
       <recipeUsers Inherit="False">
         <li>FabricationBench</li>
       </recipeUsers>
-      <researchPrerequisite>HRK_Research_GunNut_STALKER_Gauss</researchPrerequisite>
+      <researchPrerequisite>ChargedShot</researchPrerequisite>
       <skillRequirements>
         <Crafting>15</Crafting>
       </skillRequirements>
