@@ -114,7 +114,7 @@
             <damageDef>Bullet</damageDef>
             <speed>100</speed>
             <dropsCasings>false</dropsCasings>
-        </projectile>        
+        </projectile>
     </ThingDef>
 
     <!-- Gauss Battery (Homemade) -->
@@ -176,8 +176,11 @@
     </ThingDef>
 
     <!-- ==================== Recipes ========================== -->
+    <RecipeDef Name="MakeAmmo_GaussBatteryBase" ParentName="ChargeAmmoRecipeBase" Abstract="true">
+        <researchPrerequisite>ChargedShot</researchPrerequisite>
+    </RecipeDef>
 
-    <RecipeDef ParentName="ChargeAmmoRecipeBase">
+    <RecipeDef ParentName="MakeAmmo_GaussBatteryBase">
         <defName>MakeAmmo_GaussBattery_Homemade</defName>
         <label>make Gauss batteries cartridge (Homemade) x500</label>
         <description>Craft 500 Gauss batteries (Homemade).</description>
@@ -219,10 +222,9 @@
             <Ammo_GaussBattery_Homemade>500</Ammo_GaussBattery_Homemade>
         </products>
         <workAmount>13000</workAmount>
-        <researchPrerequisite>HRK_Research_GunNut_STALKER_Gauss</researchPrerequisite>
     </RecipeDef>
 
-    <RecipeDef ParentName="ChargeAmmoRecipeBase">
+    <RecipeDef ParentName="MakeAmmo_GaussBatteryBase">
         <defName>MakeAmmo_GaussBattery_Industrial</defName>
         <label>make Gauss batteries (Industrial) x500</label>
         <description>Craft 500 Gauss batteries (Industrial).</description>
@@ -264,10 +266,9 @@
             <Ammo_GaussBattery_Industrial>500</Ammo_GaussBattery_Industrial>
         </products>
         <workAmount>16000</workAmount>
-        <researchPrerequisite>HRK_Research_GunNut_STALKER_Gauss</researchPrerequisite>
     </RecipeDef>
 
-    <RecipeDef ParentName="ChargeAmmoRecipeBase">
+    <RecipeDef ParentName="MakeAmmo_GaussBatteryBase">
         <defName>MakeAmmo_GaussBattery_Charged</defName>
         <label>make Gauss batteries (Charged) x500</label>
         <description>Craft 500 Gauss batteries (Charged).</description>
@@ -309,7 +310,6 @@
             <Ammo_GaussBattery_Charged>500</Ammo_GaussBattery_Charged>
         </products>
         <workAmount>19000</workAmount>
-        <researchPrerequisite>HRK_Research_GunNut_STALKER_Gauss</researchPrerequisite>
     </RecipeDef>
 
 </Defs>

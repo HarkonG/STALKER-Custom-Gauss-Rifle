@@ -26,6 +26,20 @@
                     <mods>
                         <li>Combat Extended</li>
                     </mods>
+
+                    <match Class="PatchOperationSequence">
+                        <operations>
+
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/RecipeDef[@Name="MakeAmmo_GaussBatteryBase"]/researchPrerequisite</xpath>
+                                <value>
+                                    <researchPrerequisite>VWE_MassDrivers</researchPrerequisite>
+                                </value>
+                            </li>
+
+                        </operations>
+                    </match>
+
                     <nomatch Class="PatchOperationSequence">
                         <operations>
 
