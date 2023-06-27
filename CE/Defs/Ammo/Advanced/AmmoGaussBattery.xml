@@ -105,7 +105,7 @@
 
     <!-- ================== Projectiles ================== -->
 
-    <ThingDef Name="BaseGaussBatteryBullet" ParentName="BaseBullet" Abstract="true">
+    <ThingDef Name="BaseGaussBatteryBullet" ParentName="BaseBulletCE" Abstract="true">
         <graphicData>
             <texPath>Things/Projectile/ChargeLanceShot</texPath>
             <graphicClass>Graphic_Single</graphicClass>
