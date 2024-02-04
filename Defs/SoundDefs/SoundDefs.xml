@@ -5,7 +5,7 @@
     <SoundDef>
         <defName>HRK_Interact_STALKER_Gauss</defName>
         <context>MapOnly</context>
-        <eventNames />
+        <eventNames/>
         <maxSimultaneous>1</maxSimultaneous>
         <subSounds>
             <li>
@@ -30,7 +30,7 @@
     <SoundDef>
         <defName>HRK_Shot_STALKER_Gauss</defName>
         <context>MapOnly</context>
-        <eventNames />
+        <eventNames/>
         <maxSimultaneous>1</maxSimultaneous>
         <subSounds>
             <li>
